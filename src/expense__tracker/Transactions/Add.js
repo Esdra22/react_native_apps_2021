@@ -43,7 +43,7 @@ const Add = ({ navigation }) => {
       title,
     };
 
-    if (!price || !title) return alert("Details Empty");
+    if (!price || !title) return alert("preencha o campo");
 
     dispatch(addTransaction(transaction));
     setPrice("");
@@ -65,7 +65,7 @@ const Add = ({ navigation }) => {
           color="primary2"
           style={{ marginLeft: 30, fontSize: 18 }}
         >
-          Add Amount
+          Adiciona o Valor
         </Text>
       </Box>
 
@@ -78,13 +78,11 @@ const Add = ({ navigation }) => {
           paddingBottom="s"
           marginTop="m"
         >
-          <Text variant="title" color="primary">
-            ₦
-          </Text>
+        
 
           <TextInput
             placeholderTextColor={theme.colors.primary}
-            placeholder="Amount"
+            placeholder="valor"
             keyboardType="number-pad"
             style={{
               padding: 10,
@@ -99,7 +97,7 @@ const Add = ({ navigation }) => {
           />
 
           <Text variant="title" color="primary" style={{ fontSize: 20 }}>
-            NGN
+            kzs
           </Text>
         </Box>
 
@@ -107,7 +105,7 @@ const Add = ({ navigation }) => {
           <TextInput
             ref={titleRef}
             placeholderTextColor={theme.colors.primary}
-            placeholder="Expenses made for"
+            placeholder="descrição"
             defaultValue={title}
             style={{
               fontSize: 30,
@@ -127,7 +125,7 @@ const Add = ({ navigation }) => {
               alignItems="center"
               justifyContent="center"
             >
-              <Text variant="title1">Submit</Text>
+              <Text variant="title1">Enviar</Text>
             </Box>
           </BorderlessButton>
         </Box>

@@ -19,12 +19,7 @@ const Top = () => {
 
   return (
     <Box paddingLeft="l" paddingRight="l" style={{ paddingTop: 40 }}>
-      <Box flexDirection="row" justifyContent="space-between">
-        <Text variant="title" style={{ fontSize: 30, fontFamily: "RMedium" }}>
-          November
-        </Text>
-        <Chart />
-      </Box>
+      
       <Box flexDirection="row" justifyContent="space-between" marginTop="m">
         <Box>
           <Text
@@ -33,7 +28,7 @@ const Top = () => {
             variant="body"
             color="white"
           >
-            Income
+            Renda
           </Text>
           <Text
             textAlign="center"
@@ -43,7 +38,7 @@ const Top = () => {
             color="green"
             fontWeight="700"
           >
-            ₦{income}
+            {income}kzs
           </Text>
         </Box>
         <Box>
@@ -53,7 +48,7 @@ const Top = () => {
             variant="body"
             color="white"
           >
-            Expenses
+            Despesas
           </Text>
           <Text
             textAlign="center"
@@ -63,7 +58,7 @@ const Top = () => {
             fontWeight="700"
             fontFamily="SFBOLD"
           >
-            -₦{expense}
+            {expense}-kzs
           </Text>
         </Box>
         <Box>
@@ -73,7 +68,7 @@ const Top = () => {
             variant="body"
             color="white"
           >
-            Balance
+            Total
           </Text>
           <Text
             textAlign="center"
@@ -82,7 +77,7 @@ const Top = () => {
             fontSize={13}
             color="brown"
           >
-            ₦{balance}
+            {balance}kzs
           </Text>
         </Box>
       </Box>
